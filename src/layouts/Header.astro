@@ -1,0 +1,17 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header>
+  <nav class={`flex justify-between px-32 py-8 text-white`}>
+    <h2 class={`font-bold text-xl`}>
+      <HeaderLink href="#">rezzawann</HeaderLink>
+    </h2>
+    <div class="flex gap-4 text-sm items-center">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="#">About</HeaderLink>
+      <HeaderLink href="#">Portofolio</HeaderLink>
+      <HeaderLink href="#">Contact</HeaderLink>
+    </div>
+  </nav>
+</header>
