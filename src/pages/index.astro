@@ -3,5 +3,35 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main></main>
+  <main>
+    <section class="mx-40 mt-16 flex items-center">
+      <div class="w-3/5 text-white">
+        <h2 class="text-4xl font-semibold">
+          Your vision, my skills - let's build something <span
+            class="text-yellow-500">awesome</span
+          > that works for you
+        </h2>
+        <p class="mt-4 tracking-wide">
+          Hi, thank you for visiting my portfolio, don't hesitate to explore,
+          scroll now! or need help? contact me by looking at the bottom there is
+          my contact.
+        </p>
+      </div>
+      <div class="w-2/5">
+        <div
+          class="flex w-full flex-col items-center justify-center text-white"
+        >
+          <img
+            src="/gwejh.jpg"
+            alt="Reza Setyawan Picture"
+            class="block aspect-square h-60 w-60 rounded-full border border-white object-cover p-1"
+          />
+          <h2 class="font-semibold mt-3">Reza Setyawan</h2>
+          <p class="text-sm">
+            Fullstack Web Developer | Web Development Enthusiast
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
