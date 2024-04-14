@@ -1,5 +1,5 @@
 ---
-import '../styles/index.css'
+import "../styles/index.css";
 import Header from "./Header.astro";
 interface Props {
   title: string;
@@ -24,7 +24,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="font-rubik">
+  <body
+    style={{
+      backgroundImage: `url('/grid.svg')`,
+    }}
+    class="font-rubik min-h-dvh"
+  >
     <Header />
     <slot />
   </body>
