@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import ArticleLayout from '@/layouts/ArticleLayout.astro'
+import ArticleLayout from "@/layouts/ArticleLayout.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("portofolio");
@@ -17,8 +17,8 @@ const { Content } = await portofolio.render();
 
 <ArticleLayout title={portofolio.data.title}>
   <main>
-    <article class="text-white prose prose-invert mx-80">
-        <Content />
+    <article class="prose prose-invert mx-80 text-white">
+      <Content />
     </article>
   </main>
 </ArticleLayout>
