@@ -67,9 +67,9 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        rubik: ["Rubik", "sans-serif"]
+        rubik: ["Rubik", "sans-serif"],
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
