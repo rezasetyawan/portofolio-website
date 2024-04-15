@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 
 <Layout title="Welcome to Astro.">
   <main class="mb-96">
-    <section class="mx-40 mt-16 flex items-center">
-      <div class="w-3/5 text-white">
-        <h2 class="text-4xl font-semibold">
+    <section class="mx-5 mt-8 lg:mx-40 lg:mt-16 lg:flex lg:items-center">
+      <div class="text-white lg:w-3/5">
+        <h2 class="text-3xl font-semibold lg:text-4xl">
           Your vision, my skills - let's build something <span
             class="text-yellow-500">awesome</span
           > that works for you
@@ -17,9 +17,13 @@ import { Button } from "@/components/ui/button";
           scroll now! or need help? contact me by looking at the bottom there is
           my contact.
         </p>
-        <Button className="mt-8 rounded-full">See My Portofolio</Button>
+        <a href="/portofolio"
+          ><Button className="mt-4 rounded-full lg:mt-8"
+            >See My Portofolio</Button
+          ></a
+        >
       </div>
-      <div class="w-2/5">
+      <div class="mt-8 lg:mt-0 lg:w-2/5">
         <div
           class="flex w-full flex-col items-center justify-center text-white"
         >
@@ -29,20 +33,24 @@ import { Button } from "@/components/ui/button";
             class="block aspect-square h-60 w-60 rounded-full border border-white object-cover p-1"
           />
           <h2 class="mt-3 font-semibold">Reza Setyawan</h2>
-          <p class="text-sm">
+          <p class="text-center text-sm">
             Fullstack Web Developer | Web Development Enthusiast
           </p>
         </div>
       </div>
     </section>
 
-    <section class="mx-20 mt-20">
+    <section class="mx-5 mt-10 lg:mx-20 lg:mt-20">
       <h2 class="text-center text-3xl font-semibold text-white">My Project</h2>
-      <div class="mt-12 grid grid-cols-3 gap-5">
+      <div class="mt-6 grid grid-cols-1 gap-5 lg:mt-12 lg:grid-cols-3">
         <div
           class="rounded-md border border-green-200/30 bg-[#191A19] p-2 text-white shadow-sm shadow-green-200/10"
         >
-          <img src="/project-placeholder-1.jpg" class="rounded-sm" alt="project" />
+          <img
+            src="/project-placeholder-1.jpg"
+            class="rounded-sm"
+            alt="project"
+          />
           <h2 class="mb-1 mt-2 text-center text-lg font-semibold">
             Learningspace
           </h2>
@@ -58,7 +66,11 @@ import { Button } from "@/components/ui/button";
         <div
           class="rounded-md border border-green-200/30 bg-[#191A19] p-2 text-white shadow-sm shadow-green-200/10"
         >
-          <img src="/project-placeholder-1.jpg" class="rounded-sm" alt="project" />
+          <img
+            src="/project-placeholder-1.jpg"
+            class="rounded-sm"
+            alt="project"
+          />
           <h2 class="mb-1 mt-2 text-center text-lg font-semibold">
             Learningspace
           </h2>
@@ -74,7 +86,11 @@ import { Button } from "@/components/ui/button";
         <div
           class="rounded-md border border-green-200/30 bg-[#191A19] p-2 text-white shadow-sm shadow-green-200/10"
         >
-          <img src="/project-placeholder-1.jpg" class="rounded-sm" alt="project" />
+          <img
+            src="/project-placeholder-1.jpg"
+            class="rounded-sm"
+            alt="project"
+          />
           <h2 class="mb-1 mt-2 text-center text-lg font-semibold">
             Learningspace
           </h2>
@@ -89,8 +105,12 @@ import { Button } from "@/components/ui/button";
         </div>
       </div>
 
-      <div class="flex justify-center mt-10">
-        <Button className="rounded-full" variant="secondary">Show More</Button>
+      <div class="mt-10 flex justify-center">
+        <a href="/portofolio"
+          ><Button className="rounded-full" variant="secondary"
+            >Show More</Button
+          ></a
+        >
       </div>
     </section>
   </main>
