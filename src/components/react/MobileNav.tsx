@@ -40,10 +40,10 @@ const MobileNav = ({ pathname }: { pathname: string }) => {
       label: "Portofolio",
       href: "/portofolio",
     },
-    {
-      label: "Contact",
-      href: "/contact",
-    },
+    // {
+    //   label: "Contact",
+    //   href: "/contact",
+    // },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
