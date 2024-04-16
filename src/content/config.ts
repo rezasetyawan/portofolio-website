@@ -4,7 +4,7 @@ const portofolio = defineCollection({
   type: "content",
   // Type-check frontmatter using a schema
   schema: z.object({
-	name: z.string(),
+	projectName: z.string(),
     title: z.string(),
     description: z.string(),
     // Transform string to Date object
