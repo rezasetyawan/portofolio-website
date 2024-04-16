@@ -13,12 +13,30 @@ type Props = CollectionEntry<"portofolio">;
 
 const portofolio = Astro.props;
 const { Content } = await portofolio.render();
+
+const { title, projectName, heroImage } = portofolio.data;
 ---
 
 <ArticleLayout title={portofolio.data.title}>
   <main>
-    <article class="prose prose-invert mx-80 text-white">
-      <Content />
+    <article>
+      {
+        heroImage && (
+          <div class="px-2 sm:px-4">
+            <img
+              src={heroImage}
+              alt={projectName}
+              class="mx-auto block rounded-md"
+            />
+          </div>
+        )
+      }
+
+      <div class="prose prose-invert mt-10 max-w-[80ch] mx-5 md:mx-10 lg:mx-auto">
+        <h1 class="text-center">{title}</h1>
+        <hr />
+        <Content />
+      </div>
     </article>
   </main>
 </ArticleLayout>
