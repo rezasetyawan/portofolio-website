@@ -2,214 +2,63 @@
 projectName: "Learningspace"
 title: "Modern simple web based learning management system"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jul 01 2022"
-heroImage: "/project-placeholder-1.jpg"
+pubDate: "Apr 26 2024"
+heroImage: "/portofolio/learningspace.png"
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+## Description
+
+Website based learning management system that have dynamic learning class and module. User able to expand their knowledge by joining available class that have learning, quiz, and submission module. User able to interact with other user in module discussion page, where user able to create and answer discussion.
+
+## Features
+
+### User (Student)
+#### 1. Login and Register
+User able to do register and login in auth page
+#### 2. Joining class
+User able to explore class on academies page and join desired class
+#### 3. Learn class module and update progress
+After join a class user able to learn every module inside it. There 3 variant of module that is learning module, quiz module, and subsmission module. User able to take quiz in quiz module. In submission module user must work with a task that given by admin. Once user finished the module, it automatically update their progress in that class. User also able to see their quiz and submission histories.
+#### 4. Create and answer discussion on module discussion page
+Inside module page, user able to navigate to module discussion page. In that page user able to explore other's discussion and answer to that discussion. In the other hand user able to create their own discussion.
+#### 5. Manage profile
+User able to change their username, fullname, and profile picture.
+
+<hr></hr>
+### Admin
+#### 1. Login and Register
+Admin able to do register and login in auth page
+#### 2. Manage class
+Admin able to see, create, update and delete a class. Admin also able do the same thing to module inside that class.
+#### 3. Contribute to module discussion
+Admin also able to contribute to user module discussion
+#### 4. Review Student's submitted submission
+Admin able to review student's submitted subsmission. Admin can either accept or reject user submission. Admin also able to leave a note and score to reviewed submission.
+#### 5. Process user join class request
+Admin able to either accept or reject user join class request.
+#### 6. Dashboard
+In dashboard page admin able to see active user stats, popular class, class count, and unreviewd submission count.
+
+<hr></hr>
+### Superadmin
+#### 1. All admin features
+Superadmin adble to do all what admin can do.
+#### 2. Manage user
+Superadmin able to managem user data, but of course there's a limitation. Superadmin only able to create new user and update user role.
+
+
+## Used Technologies
+import TechCard from '../../components/TechCard.astro';
+
+<div className='mt-2 grid grid-cols-2 gap-4 min-[425px]:grid-cols-3 md:grid-cols-6 xl:grid-cols-6 mb-20'>
+  <TechCard icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" label="Typescript"></TechCard>
+  <TechCard icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" label="React.js"></TechCard>
+  <TechCard icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" label="Tailwind CSS"></TechCard>
+  <TechCard icon="https://avatars.githubusercontent.com/u/139895814?s=280&v=4" label="Shadcn UI"></TechCard>
+  <TechCard icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" label="PostgreSQL"></TechCard>
+  <TechCard icon="https://avatars.githubusercontent.com/u/108468352?s=200&v=4" label="Drizzle ORM"></TechCard>
+  <TechCard icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" label="Supabase"></TechCard>
+  <TechCard icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" label="Nest.js"></TechCard>
+  <TechCard icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" label="Next.js"></TechCard>
+</div>
 
-## Headings
-
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
-
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Images
-
-#### Syntax
-
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
-
-#### Output
-
-![blog placeholder](/blog-placeholder-about.jpg)
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-### Blockquote without attribution
-
-#### Syntax
-
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
-
-#### Output
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-### Blockquote with attribution
-
-#### Syntax
-
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br></br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-#### Syntax
-
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
-
-#### Output
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-#### Syntax
-
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntac, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
-
-````markdown
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
-
-Output
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-### Ordered List
-
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
-
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-#### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-#### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
